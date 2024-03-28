@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="calculadora">
+        <div class="visor">
+            <p class="v1"></p>
+            <input type="hidden" class="v1I" name="opI" value="">
+            <p class="op"> </p>
+            <input type="hidden" class="opI" name="opI" value="">
+            <p class="v2"></p>
+            <input type="hidden" class="v2I" name="opI" value="">
+            <p class="sinalResultado"></p>
+            <p class="result"></p>
+            <input type="hidden" class="resultI" name="resultI" value="">
+        </div>
+        <div class="teclado">
+            <div class="tecla" onclick="teclar('7')" onmouseup="botao()">
+                7
+            </div>
+            <div class="tecla" onclick="teclar('8')">
+                8
+            </div>
+            <div class="tecla" onclick="teclar('9')">
+                9
+            </div>
+            <div class="tecla" id="c" onclick="reset()">
+                C
+            </div>
+            <div class="tecla" onclick="teclar('4')">
+                4
+            </div>
+            <div class="tecla" onclick="teclar('5')">
+                5
+            </div>
+            <div class="tecla" onclick="teclar('6')">
+                6
+            </div>
+            <div class="tecla" onclick="teclar('x')">
+                x
+            </div>
+            <div class="tecla" onclick="teclar('1')">
+                1
+            </div>
+            <div class="tecla" onclick="teclar('2')">
+                2
+            </div>
+            <div class="tecla" onclick="teclar('3')">
+                3
+            </div>
+            <div class="tecla" onclick="teclar('/')">
+                /
+            </div>
+            <div class="tecla" onclick="teclar('+')">
+                +
+            </div>
+            <div class="tecla" onclick="teclar('0')">
+                0
+            </div>
+            <div class="tecla" onclick="teclar('-')">
+                -
+            </div>
+            <div class="tecla" onclick="calcular()">
+                =
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
